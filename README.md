@@ -1,5 +1,5 @@
 # ScytheFactionSelector
 
-PWA for randomly select a scythe faction.
+PWA for randomly selecting a scythe faction.
 
-hosted on: https://scythe-faction-selector.web.app
+> Hosted on: https://scythe-faction-selector.web.app
