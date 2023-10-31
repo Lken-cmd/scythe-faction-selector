@@ -1,0 +1,20 @@
+<h2>Neues Spiel</h2>
+<div class="action-container">
+    <span>Spieler ausgewählt: {{selectedPlayerIds.size}}</span>
+    <button mat-raised-button [disabled]="selectedPlayerIds.size < 1" color="accent" (click)="createGame($event)">Spiel
+        erstellen</button>
+</div>
+
+<mat-form-field class="search-container">
+    <input matInput [(ngModel)]="searchInput" (keyup)="filterPlayers()" placeholder="Suche" />
+    <mat-icon matSuffix>search</mat-icon>
+</mat-form-field>
+
+<mat-selection-list>
+    <mat-list-option *ngFor="let player of filteredPlayers" [value]="player.id"
+        [selected]="selectedPlayerIds.has(player.id)" (selectedChange)="toggleSelection($event, player.id)"
+        [disabled]="selectedPlayerIds.size > 6 && !selectedPlayerIds.has(player.id)"
+        class="alternating-color-list-item">
+        {{player.name}}
+    </mat-list-option>
+</mat-selection-list>

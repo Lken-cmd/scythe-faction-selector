@@ -1,0 +1,81 @@
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
+.faction {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    height: 70px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.faction-banner {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.player-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.faction-playername {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.faction-start-tag {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    align-self: flex-start;
+}
+
+.faction-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.faction-name {
+    font-weight: bold;
+    text-align: end;
+}
+
+.faction-leader-name {
+    font-size: 0.8em;
+    color: #fff;
+    margin-bottom: 5px;
+    text-align: end;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+    /* gradient from left (more transparent) to right (less transparent) */
+    border-radius: 4px;
+    padding: 1px 4px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.faction-economyBoard {
+    background-color: #BAA45B;
+    color: black;
+    padding: 2px 8px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.end-button {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+}

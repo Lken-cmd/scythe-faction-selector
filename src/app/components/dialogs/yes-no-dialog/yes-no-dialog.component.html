@@ -1,0 +1,7 @@
+<h2 mat-dialog-title>{{data.title}}</h2>
+<mat-dialog-content>{{data.text}}</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-stroked-button color="accent" [mat-dialog-close]="false">Nein</button>
+  <span style="flex: 1 1 auto;"></span>
+  <button mat-stroked-button color="primary" [mat-dialog-close]="true">Ja</button>
+</mat-dialog-actions>

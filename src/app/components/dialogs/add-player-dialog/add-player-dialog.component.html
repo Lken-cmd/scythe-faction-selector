@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Spieler hinzufügen</h2>
+<mat-dialog-content>
+    <form (ngSubmit)="closeDialog($event)">
+        <mat-form-field>
+            <input matInput type="text" [(ngModel)]="name" name="playerName" placeholder="Name">
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-stroked-button color="accent" [mat-dialog-close]="false">Abbrechen</button>
+    <span style="flex: 1 1 auto;"></span>
+    <button mat-stroked-button color="primary" (click)="closeDialog($event)">Ok</button>
+</mat-dialog-actions>

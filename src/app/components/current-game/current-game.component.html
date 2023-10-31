@@ -1,0 +1,16 @@
+<div *ngFor="let assignment of scytheService.activeGame | async; index as i" class="faction"
+    [ngStyle]="{'background-image': 'linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)), url(' + assignment.faction.imageUrl + ')', 'background-position': '0 ' + assignment.faction.imagePositionTop + '%'}">
+    <img class="faction-banner" mat-card-avatar [src]="assignment.faction.bannerImageUrl" />
+    <div class="player-section">
+        <span class="faction-playername">{{assignment.player.name}}</span>
+        <span *ngIf="i === 0" class="faction-start-tag">Beginnt</span>
+    </div>
+    <div class="faction-details">
+        <span class="faction-name">{{assignment.faction.name}}</span>
+        <!-- <span class="faction-leader-name">{{assignment.faction.leaderName}}</span> -->
+        <span class="faction-economyBoard">{{assignment.economyBoard.name}}</span>
+    </div>
+</div>
+<div class="end-button">
+    <button mat-stroked-button color="warn" (click)="FinishGame($event)">Spiel beenden</button>
+</div>

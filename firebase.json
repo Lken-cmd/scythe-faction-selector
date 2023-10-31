@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "scythe-faction-selector",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
