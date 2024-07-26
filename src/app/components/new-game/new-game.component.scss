@@ -1,0 +1,15 @@
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container {
+    width: 100%;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "scythe-faction-selector": {
+      "hosting": {
+        "scythe-faction-selector": [
+          "scythe-faction-selector"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "scythe-faction-selector"
+  }
+}
